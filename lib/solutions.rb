@@ -12,4 +12,14 @@ module Solutions
     end
     count
   end
+
+  def largest_prime_factor(number)
+    max = number
+    lower = 2
+    while lower < max
+      max /= lower while (max % lower).zero? && max != lower
+      lower += 1
+    end
+    max
+  end
 end

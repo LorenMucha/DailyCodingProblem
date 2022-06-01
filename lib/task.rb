@@ -1,6 +1,6 @@
 require 'solutions'
 
 # Class to calculate solution
-class Tasks
+class Task
   include Solutions
 end
