@@ -12,4 +12,9 @@ describe Task do
       expect(tasks.largest_prime_factor(13_195)).to(eq(29))
     end
   end
+  context 'find all possible IP Adress combinations' do
+    it 'shoud find the the correct combinations for a given string' do
+      expect(tasks.generate_ip_from_string('2542540123')).to(eq('254.254.0.123'))
+    end
+  end
 end
