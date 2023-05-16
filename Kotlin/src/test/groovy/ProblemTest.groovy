@@ -2,14 +2,14 @@ import spock.lang.Specification
 
 class ProblemTest extends Specification {
 
-    def "Problem should return 1" () {
-        given:
-        def resolver = new DailyProblem()
+    def "Problem should return 1"() {
 
-        when:
-        int result = resolver.exec()
+        expect:
+        new Resolver().exec(70, x) == result
 
-        then:
-        result == 1
+        where:
+        x | result
+        1 | 19
+        2 | 28
     }
 }
