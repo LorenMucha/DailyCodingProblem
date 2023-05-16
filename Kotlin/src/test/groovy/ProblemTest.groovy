@@ -11,5 +11,7 @@ class ProblemTest extends Specification {
         x | result
         1 | 19
         2 | 28
+        3 | 37
+        4 | 46
     }
 }
