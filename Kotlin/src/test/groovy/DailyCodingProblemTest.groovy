@@ -30,4 +30,14 @@ class DailyCodingProblemTest extends Specification {
         expect:
         result == "4,3,2,1,0"
     }
+
+    def "Task #101"(){
+
+        given:
+        new Resolver().exec(101, x) == result
+
+        where:
+        x | result
+        5 | "2 + 2 = $x"
+    }
 }
